@@ -10,7 +10,7 @@ const SignInPage = ({ setUser }) => {
 
     const handleLogin = async (inputEmail, inputPassword) => {
         try {
-            const res = await fetch('http://localhost:3001/signin', {
+            const res = await fetch('https://face-recognition-backend-pz0b.onrender.com/signin', {
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({

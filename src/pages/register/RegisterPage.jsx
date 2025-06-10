@@ -9,7 +9,7 @@ const RegisterPage = ({ setUser }) => {
 
     const handleRegister = async (regData) => {
         try {
-            const res = await fetch('http://localhost:3001/register', {
+            const res = await fetch('https://face-recognition-backend-pz0b.onrender.com/register', {
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({

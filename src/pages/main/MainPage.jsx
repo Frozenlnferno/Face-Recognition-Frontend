@@ -36,7 +36,7 @@ const MainPage = ({ user, setUser }) => {
     const submitURL = async () => {
         try {
             setImageURL(input);
-            const res = await fetch('http://localhost:3001/api/clarifai', {
+            const res = await fetch('https://face-recognition-backend-pz0b.onrender.com/api/clarifai', {
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -46,7 +46,7 @@ const MainPage = ({ user, setUser }) => {
             const data = await res.json();
             createBox(data);
 
-            const res2 = await fetch('http://localhost:3001/image', {
+            const res2 = await fetch('https://face-recognition-backend-pz0b.onrender.com/image', {
                 method: 'put',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
