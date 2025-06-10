@@ -27,7 +27,7 @@ function App() {
   }, [user]);
 
   return (
-    <Router>
+    <Router basename="/Face-Recognition-Frontend">
       <Routes>
         <Route path='/' element={ <Navigate to='/signin'/> } />
         <Route path='/signin' element={ <SignInPage setUser={setUser} /> } />
