@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Navigation = ({ signOut }) => {
     return (
         <nav className="flex justify-end">
