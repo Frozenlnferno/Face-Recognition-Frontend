@@ -1,7 +1,7 @@
 {
   "name": "face-recognition-app",
   "private": true,
-  "homepage": "https://Frozenlnferno.github.io/Face-Recognition-Frontend",
+  "homepage": "https://frozenlnferno.github.io/Face-Recognition-Frontend",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
